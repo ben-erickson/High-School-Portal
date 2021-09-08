@@ -6,3 +6,4 @@ C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchool
 C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\UserAndClassJsonSerializer\obj\Debug\UserAndClassJsonSerializer.csproj.CopyComplete
 C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\UserAndClassJsonSerializer\obj\Debug\UserAndClassJsonSerializer.exe
 C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\UserAndClassJsonSerializer\obj\Debug\UserAndClassJsonSerializer.pdb
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\UserAndClassJsonSerializer\obj\Debug\UserAndClassJsonSerializer.csproj.AssemblyReference.cache

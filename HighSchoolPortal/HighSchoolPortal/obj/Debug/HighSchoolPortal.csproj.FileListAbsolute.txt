@@ -9,3 +9,7 @@ C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchool
 C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.csproj.CopyComplete
 C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.exe
 C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.pdb
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.Forms.ClassView.resources
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.Forms.LoginForm.resources
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.Forms.ScheduleView.resources
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.Forms.MainForm.resources

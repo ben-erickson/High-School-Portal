@@ -13,8 +13,8 @@ namespace UserAndClassJsonSerializer
     class Program
     {
         // CHANGE ME: Change these to some sample files on your computer
-        static string classFile = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\UserAndClassJsonSerializer\\classFile.txt";
-        static string userFile = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\UserAndClassJsonSerializer\\userFile.txt";
+        static string classFile = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\UserAndClassJsonSerializer\\classFile.json";
+        static string userFile = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\UserAndClassJsonSerializer\\userFile.json";
 
         static List<string> userList;
         static List<string> classList;

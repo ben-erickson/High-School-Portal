@@ -8,13 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HighSchoolPortal
+namespace HighSchoolPortal.Forms
 {
-    public partial class Form1 : Form
+    public partial class ClassView : Form
     {
-        public Form1()
+        public ClassView()
         {
             InitializeComponent();
+
+            this.btnClose.Click += this.BtnClose_Click;
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
