@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uzpGPeAUNqSg/bT3F8lOcwbo4LE/PeVh4cQssdUHOsnU7atZaQTapsp9UgwSMWdVdNuoRCjrxCBLy0oJBMSESQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\UserAndClassJsonSerializer\\UserAndClassJsonSerializer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\berickson\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

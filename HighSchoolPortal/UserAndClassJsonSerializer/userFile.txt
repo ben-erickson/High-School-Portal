@@ -1,0 +1,4 @@
+{"PowerLevel":0,"TeacherId":null,"Grade":11,"Username":"berickson","Password":"password"}
+{"PowerLevel":0,"TeacherId":null,"Grade":12,"Username":"vlakatos","Password":"password"}
+{"PowerLevel":1,"TeacherId":1,"Grade":null,"Username":"mmitchell","Password":"password"}
+{"PowerLevel":1,"TeacherId":2,"Grade":null,"Username":"jwood","Password":"password"}

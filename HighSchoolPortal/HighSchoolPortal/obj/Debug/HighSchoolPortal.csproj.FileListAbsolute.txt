@@ -1,0 +1,11 @@
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\bin\Debug\HighSchoolPortal.exe.config
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\bin\Debug\HighSchoolPortal.exe
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\bin\Debug\HighSchoolPortal.pdb
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\bin\Debug\Newtonsoft.Json.dll
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.csproj.AssemblyReference.cache
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.Properties.Resources.resources
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.csproj.GenerateResource.cache
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.csproj.CoreCompileInputs.cache
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.csproj.CopyComplete
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.exe
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.pdb

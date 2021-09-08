@@ -1,0 +1,8 @@
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\UserAndClassJsonSerializer\bin\Debug\UserAndClassJsonSerializer.exe.config
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\UserAndClassJsonSerializer\bin\Debug\UserAndClassJsonSerializer.exe
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\UserAndClassJsonSerializer\bin\Debug\UserAndClassJsonSerializer.pdb
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\UserAndClassJsonSerializer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\UserAndClassJsonSerializer\obj\Debug\UserAndClassJsonSerializer.csproj.CoreCompileInputs.cache
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\UserAndClassJsonSerializer\obj\Debug\UserAndClassJsonSerializer.csproj.CopyComplete
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\UserAndClassJsonSerializer\obj\Debug\UserAndClassJsonSerializer.exe
+C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\UserAndClassJsonSerializer\obj\Debug\UserAndClassJsonSerializer.pdb

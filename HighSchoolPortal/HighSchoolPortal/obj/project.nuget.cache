@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aVPvF04qm8jFQxq/26ETiwOEJXPjkUkHn/vBbsP5HGcyFyGH/PYMcn2gT/Pu8MMVz32GY3DYCV9XsqNTVtWYlQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\HighSchoolPortal\\HighSchoolPortal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\berickson\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
