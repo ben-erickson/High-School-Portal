@@ -1,23 +1,33 @@
-﻿using System;
+﻿using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
-using Newtonsoft.Json;
 
 namespace HighSchoolPortal.Library.Classes
 {
     class SchoolClassList
     {
-        public List<SchoolClass> ClassList { get; set; }
+        public List<SchoolClass> ClassList { get; }
 
-        public SchoolClassList(string filepath)
+        private static string _classFile = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\HighSchoolPortal\\data\\classFile.json";
+        private static SchoolClassList _instance;
+
+        private SchoolClassList()
         {
-            foreach (string line in File.ReadAllLines(filepath))
+            this.ClassList = new List<SchoolClass>();
+            foreach (string line in File.ReadAllLines(_classFile))
             {
-                ClassList.Add(JsonConvert.DeserializeObject<SchoolClass>(line));
+                this.ClassList.Add(JsonConvert.DeserializeObject<SchoolClass>(line));
             }
+        }
+
+        public static SchoolClassList GetInstance()
+        {
+            // NOTE: This is NOT THREAD SAFE!! When you implement multithreading, update this to become thread safe
+            if (_instance == null)
+            {
+                _instance = new SchoolClassList();
+            }
+            return _instance;
         }
     }
 }

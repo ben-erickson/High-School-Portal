@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+﻿using HighSchoolPortal.Library.Classes;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HighSchoolPortal.Forms
@@ -14,15 +9,41 @@ namespace HighSchoolPortal.Forms
     {
         public LoginForm()
         {
-            InitializeComponent();
+            this.InitializeComponent();
 
             this.btnLogIn.Click += this.BtnLogIn_Click;
         }
 
         private void BtnLogIn_Click(object sender, EventArgs e)
         {
-            // Eventually, this will check whether they input a valid username/password
+            string username = this.tBoxUsername.Text;
+            string password = this.tBoxPassword.Text;
+
+            foreach (User user in UserBody.GetInstance().FacultyList)
+            {
+                if (user.Username == username && user.Password == password)
+                {
+                    this.LogIn(user);
+                    return;
+                }
+            }
+
+            foreach (User user in UserBody.GetInstance().StudentList)
+            {
+                if (user.Username == username && user.Password == password)
+                {
+                    this.LogIn(user);
+                    return;
+                }
+            }
+
+            MessageBox.Show("Login information incorrect. Please try again.");
+        }
+
+        private void LogIn(User user)
+        {
             var mainFrom = Application.OpenForms.OfType<MainForm>().FirstOrDefault();
+            mainFrom.LoggedInUser = user;
             mainFrom.LoggedIn = true;
             this.Close();
         }

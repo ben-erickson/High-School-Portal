@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HighSchoolPortal.Library.Classes
+﻿namespace HighSchoolPortal.Library.Classes
 {
-    class SchoolClass
+    public class SchoolClass
     {
+        // TODO: Add Day of the Week and Period to this! They should probably be enums
         public int TeacherId { get; set; }
         public int Grade { get; set; }
         public string ClassName { get; set; }
@@ -34,6 +29,11 @@ namespace HighSchoolPortal.Library.Classes
             // TODO: This is going to need some way to query all the teachers, and I'm not sure how that's going to go, so figure it out
             bool result = true;
             return result;
+        }
+
+        public override string ToString()
+        {
+            return this.ClassName;
         }
     }
 }

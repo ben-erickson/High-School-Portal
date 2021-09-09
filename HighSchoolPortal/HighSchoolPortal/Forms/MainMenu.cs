@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HighSchoolPortal.Library.Classes;
+using System;
 using System.Windows.Forms;
 
 namespace HighSchoolPortal.Forms
 {
     public partial class MainForm : Form
     {
+        internal User LoggedInUser { get; set; }
         internal bool LoggedIn = false;
         public MainForm()
         {
-            InitializeComponent();
+            this.InitializeComponent();
 
             this.Load += this.MainForm_Load;
 
@@ -37,13 +32,13 @@ namespace HighSchoolPortal.Forms
 
         private void BtnOpenSchedule_Click(object sender, EventArgs e)
         {
-            var scheduleForm = new ScheduleView();
+            var scheduleForm = new ScheduleView(this.LoggedInUser);
             scheduleForm.ShowDialog();
         }
 
         private void BtnOpenClass_Click(object sender, EventArgs e)
         {
-            var classForm = new ClassView();
+            var classForm = new ClassView(this.LoggedInUser);
             classForm.ShowDialog();
         }
 
@@ -58,7 +53,7 @@ namespace HighSchoolPortal.Forms
                 var loginForm = new LoginForm();
                 loginForm.ShowDialog();
             }
-            while (!LoggedIn);
+            while (!this.LoggedIn);
         }
     }
 }

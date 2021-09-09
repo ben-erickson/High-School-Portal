@@ -1,20 +1,17 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
-using Newtonsoft.Json;
-using UserAndClassJsonSerializer.Library.Classes;
 using UserAndClassJsonSerializer.Library;
+using UserAndClassJsonSerializer.Library.Classes;
 
 namespace UserAndClassJsonSerializer
 {
     class Program
     {
         // CHANGE ME: Change these to some sample files on your computer
-        static string classFile = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\UserAndClassJsonSerializer\\classFile.json";
-        static string userFile = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\UserAndClassJsonSerializer\\userFile.json";
+        static string classFile = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\HighSchoolPortal\\data\\classFile.json";
+        static string userFile = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\HighSchoolPortal\\data\\userFile.json";
 
         static List<string> userList;
         static List<string> classList;
@@ -75,7 +72,7 @@ namespace UserAndClassJsonSerializer
 
                     // Add serialized object to class list
                     SchoolClass schoolClass = new SchoolClass(TeacherId, Grade, ClassName);
-                    classList.Add(JsonConvert.SerializeObject(schoolClass));                    
+                    classList.Add(JsonConvert.SerializeObject(schoolClass));
                 }
                 else if (menuOption == "u")
                 {

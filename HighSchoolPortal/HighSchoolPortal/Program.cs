@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using HighSchoolPortal.Forms;
+using System;
 using System.Windows.Forms;
-using HighSchoolPortal.Forms;
 
 namespace HighSchoolPortal
 {

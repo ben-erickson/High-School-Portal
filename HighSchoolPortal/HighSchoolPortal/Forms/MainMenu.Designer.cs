@@ -33,6 +33,8 @@ namespace HighSchoolPortal.Forms
             this.btnOpenSchedule = new System.Windows.Forms.Button();
             this.panelGreeting = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.Button();
+            this.lblGreeting = new System.Windows.Forms.Label();
+            this.panelGreeting.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOpenClass
@@ -56,6 +58,7 @@ namespace HighSchoolPortal.Forms
             // panelGreeting
             // 
             this.panelGreeting.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelGreeting.Controls.Add(this.lblGreeting);
             this.panelGreeting.Location = new System.Drawing.Point(12, 12);
             this.panelGreeting.Name = "panelGreeting";
             this.panelGreeting.Size = new System.Drawing.Size(637, 367);
@@ -70,7 +73,16 @@ namespace HighSchoolPortal.Forms
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
             // 
-            // MainMenu
+            // lblGreeting
+            // 
+            this.lblGreeting.AutoSize = true;
+            this.lblGreeting.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGreeting.Location = new System.Drawing.Point(3, 9);
+            this.lblGreeting.Name = "lblGreeting";
+            this.lblGreeting.Size = new System.Drawing.Size(0, 34);
+            this.lblGreeting.TabIndex = 0;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,8 +91,10 @@ namespace HighSchoolPortal.Forms
             this.Controls.Add(this.btnOpenSchedule);
             this.Controls.Add(this.panelGreeting);
             this.Controls.Add(this.btnLogOut);
-            this.Name = "MainMenu";
+            this.Name = "MainForm";
             this.Text = "Form1";
+            this.panelGreeting.ResumeLayout(false);
+            this.panelGreeting.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -91,6 +105,7 @@ namespace HighSchoolPortal.Forms
         private System.Windows.Forms.Button btnOpenSchedule;
         private System.Windows.Forms.Panel panelGreeting;
         private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.Label lblGreeting;
     }
 }
 

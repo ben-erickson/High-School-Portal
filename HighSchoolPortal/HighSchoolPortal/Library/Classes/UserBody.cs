@@ -1,10 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
-using Newtonsoft.Json;
 
 namespace HighSchoolPortal.Library.Classes
 {
@@ -13,24 +9,38 @@ namespace HighSchoolPortal.Library.Classes
     /// </summary>
     class UserBody
     {
-        public List<User> StudentList { get; set; }
-        public List<User> FacultyList { get; set; }
-
-        public UserBody(string filepath)
+        public List<User> StudentList { get; }
+        public List<User> FacultyList { get; }
+        private static string _userFile = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\HighSchoolPortal\\data\\userFile.json";
+        private static UserBody _instance;
+        private UserBody()
         {
-            foreach(string line in File.ReadAllLines(filepath))
+            this.StudentList = new List<User>();
+            this.FacultyList = new List<User>();
+
+            foreach (string line in File.ReadAllLines(_userFile))
             {
                 User user = JsonConvert.DeserializeObject<User>(line);
 
                 if (user.PowerLevel == PowerLevel.Student)
                 {
-                    StudentList.Add(user);
+                    this.StudentList.Add(user);
                 }
                 else
                 {
-                    FacultyList.Add(user);
+                    this.FacultyList.Add(user);
                 }
             }
+        }
+
+        public static UserBody GetInstance()
+        {
+            // NOTE: This is NOT THREAD SAFE!! When you implement multithreading, update this to become thread safe
+            if (_instance == null)
+            {
+                _instance = new UserBody();
+            }
+            return _instance;
         }
     }
 }

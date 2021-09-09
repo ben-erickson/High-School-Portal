@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HighSchoolPortal.Library.Classes
+﻿namespace HighSchoolPortal.Library.Classes
 {
-    class User
+    public class User
     {
         public PowerLevel PowerLevel { get; set; }
         public int? TeacherId { get; set; }
