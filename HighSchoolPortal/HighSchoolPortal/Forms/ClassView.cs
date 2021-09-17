@@ -13,9 +13,11 @@ namespace HighSchoolPortal.Forms
         {
             this.InitializeComponent();
 
+            // Initialize instance fields
             this._loggedInUser = user;
             this._comboClasses = new List<SchoolClass>();
 
+            // Populate the combo box with the relevant classes for logged in user
             foreach (SchoolClass schoolClass in SchoolClassList.GetInstance().ClassList)
             {
                 if (this._loggedInUser.PowerLevel == Library.PowerLevel.Student)
@@ -33,10 +35,25 @@ namespace HighSchoolPortal.Forms
                     }
                 }
             }
-
             this.comboClasses.DataSource = this._comboClasses;
 
+            // Populate the class information for default selection (make this a regular method in the future?)
+            SchoolClass selectedClass = (SchoolClass)this.comboClasses.Items[this.comboClasses.SelectedIndex];
+
+            this.lblClassName.Text = selectedClass.ClassName;
+            this.lblTeacherName.Text = selectedClass.TeacherId.ToString();
+
+            // Event subscriptions
             this.btnClose.Click += this.BtnClose_Click;
+            this.btnConfirmCombo.Click += this.BtnConfirmCombo_Click;
+        }
+
+        private void BtnConfirmCombo_Click(object sender, EventArgs e)
+        {
+            SchoolClass selectedClass = (SchoolClass)this.comboClasses.Items[this.comboClasses.SelectedIndex];
+
+            this.lblClassName.Text = selectedClass.ClassName;
+            this.lblTeacherName.Text = selectedClass.TeacherId.ToString();
         }
 
         private void BtnClose_Click(object sender, EventArgs e)

@@ -1,9 +1,9 @@
-﻿using HighSchoolPortal.Library.Classes;
-using HighSchoolPortal.Library;
+﻿using HighSchoolPortal.Library;
+using HighSchoolPortal.Library.Classes;
 using System;
-using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace HighSchoolPortal.Forms
 {
@@ -44,10 +44,10 @@ namespace HighSchoolPortal.Forms
                 }
             }
 
-            dGridSchedule.Columns.Add(new DataGridViewColumn() { HeaderText = "Class Period", CellTemplate = new DataGridViewTextBoxCell() });
+            this.dGridSchedule.Columns.Add(new DataGridViewColumn() { HeaderText = "Class Period", CellTemplate = new DataGridViewTextBoxCell() });
             foreach (Weekdays day in Enum.GetValues(typeof(Weekdays)))
             {
-                dGridSchedule.Columns.Add(new DataGridViewColumn() { HeaderText = day.ToString(), CellTemplate = new DataGridViewTextBoxCell() });
+                this.dGridSchedule.Columns.Add(new DataGridViewColumn() { HeaderText = day.ToString(), CellTemplate = new DataGridViewTextBoxCell() });
             }
 
             foreach (PeriodTimes period in Enum.GetValues(typeof(PeriodTimes)))

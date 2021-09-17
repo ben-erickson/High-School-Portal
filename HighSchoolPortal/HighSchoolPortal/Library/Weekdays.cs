@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HighSchoolPortal.Library
+﻿namespace HighSchoolPortal.Library
 {
-    public enum Weekdays 
+    public enum Weekdays
     {
         Sunday,
         Monday,
