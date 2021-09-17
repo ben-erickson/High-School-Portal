@@ -47,7 +47,9 @@
     <Compile Include="Library\Classes\SchoolClassList.cs" />
     <Compile Include="Library\Classes\User.cs" />
     <Compile Include="Library\Classes\UserBody.cs" />
+    <Compile Include="Library\PeriodTimes.cs" />
     <Compile Include="Library\PowerLevel.cs" />
+    <Compile Include="Library\Weekdays.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

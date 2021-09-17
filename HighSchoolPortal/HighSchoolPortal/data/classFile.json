@@ -1,2 +1,3 @@
-{"TeacherId":1,"Grade":7,"ClassName":"Ancient History"}
-{"TeacherId":2,"Grade":9,"ClassName":"Calculus"}
+{"TeacherId":1,"Grade":7,"ClassName":"History","ClassDay":3,"ClassTime":2}
+{"TeacherId":2,"Grade":8,"ClassName":"Calculus","ClassDay":4,"ClassTime":5}
+{"TeacherId":1,"Grade":9,"ClassName":"Lunch","ClassDay":2,"ClassTime":4}

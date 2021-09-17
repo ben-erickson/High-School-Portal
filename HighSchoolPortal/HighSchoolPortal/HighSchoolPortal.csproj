@@ -70,6 +70,8 @@
     <Compile Include="Forms\ScheduleView.Designer.cs">
       <DependentUpon>ScheduleView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Library\Weekdays.cs" />
+    <Compile Include="Library\PeriodTimes.cs" />
     <Compile Include="Library\Classes\SchoolClass.cs" />
     <Compile Include="Library\Classes\SchoolClassList.cs" />
     <Compile Include="Library\Classes\UserBody.cs" />

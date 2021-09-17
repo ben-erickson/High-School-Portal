@@ -6,6 +6,8 @@
         public int TeacherId { get; set; }
         public int Grade { get; set; }
         public string ClassName { get; set; }
+        public Weekdays ClassDay { get; set; }
+        public PeriodTimes ClassTime { get; set; }
 
         /// <summary>
         /// Constructor for SchoolClass
@@ -13,11 +15,13 @@
         /// <param name="teacherId"></param>
         /// <param name="grade"></param>
         /// <param name="className"></param>
-        public SchoolClass(int teacherId, int grade, string className)
+        public SchoolClass(int teacherId, int grade, string className, Weekdays weekday, PeriodTimes period)
         {
             this.TeacherId = teacherId;
             this.Grade = grade;
             this.ClassName = className;
+            this.ClassDay = weekday;
+            this.ClassTime = period;
         }
 
         /// <summary>

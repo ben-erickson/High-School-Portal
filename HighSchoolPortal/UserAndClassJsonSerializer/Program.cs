@@ -39,6 +39,8 @@ namespace UserAndClassJsonSerializer
                     int TeacherId;
                     int Grade;
                     string ClassName;
+                    Weekdays weekday;
+                    PeriodTimes period;
 
                     // TeacherId
                     Console.WriteLine("What is the id of the teacher for this class?");
@@ -66,12 +68,38 @@ namespace UserAndClassJsonSerializer
                         continue;
                     }
 
+                    // Weekday
+                    Console.WriteLine("On what day does this class take place? (Please be exact with your input)");
+                    string weekdayInput = Console.ReadLine();
+                    if (Enum.TryParse(weekdayInput, out Weekdays EnumWeekday))
+                    {
+                        weekday = EnumWeekday;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input.");
+                        continue;
+                    }
+
+                    // Period
+                    Console.WriteLine("In which period does the class happen? (Please be exact with your input)");
+                    string periodInput = Console.ReadLine();
+                    if (Enum.TryParse(periodInput, out PeriodTimes EnumPeriod))
+                    {
+                        period = EnumPeriod;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input.");
+                        continue;
+                    }
+
                     // ClassName
                     Console.WriteLine("What is the name of the class?");
                     ClassName = Console.ReadLine();
 
                     // Add serialized object to class list
-                    SchoolClass schoolClass = new SchoolClass(TeacherId, Grade, ClassName);
+                    SchoolClass schoolClass = new SchoolClass(TeacherId, Grade, ClassName, weekday, period);
                     classList.Add(JsonConvert.SerializeObject(schoolClass));
                 }
                 else if (menuOption == "u")
