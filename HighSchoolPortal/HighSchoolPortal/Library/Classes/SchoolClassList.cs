@@ -8,26 +8,29 @@ namespace HighSchoolPortal.Library.Classes
     {
         public List<SchoolClass> ClassList { get; }
 
-        private static string _classFile = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\HighSchoolPortal\\data\\classFile.json";
-        private static SchoolClassList _instance;
+        private const string s_CLASSFILE = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\HighSchoolPortal\\data\\classFile.json";
 
-        private SchoolClassList()
+        /// <summary>
+        /// Default constructor for SchoolClassList
+        /// </summary>
+        public SchoolClassList()
         {
             this.ClassList = new List<SchoolClass>();
-            foreach (string line in File.ReadAllLines(_classFile))
+            foreach (string line in File.ReadAllLines(s_CLASSFILE))
             {
                 this.ClassList.Add(JsonConvert.DeserializeObject<SchoolClass>(line));
             }
         }
 
-        public static SchoolClassList GetInstance()
+        /// <summary>
+        /// Constructor for SchoolClassList taking a file and breaking it into a list of SchoolClass objects
+        /// </summary>
+        /// <param name="filepath"></param>
+        /// <param name="delimiter"></param>
+        public SchoolClassList(string filepath, char delimiter = ',')
         {
-            // NOTE: This is NOT THREAD SAFE!! When you implement multithreading, update this to become thread safe
-            if (_instance == null)
-            {
-                _instance = new SchoolClassList();
-            }
-            return _instance;
+
         }
-    }
+    } 
+
 }
