@@ -1,4 +1,6 @@
-﻿namespace HighSchoolPortal.Library.Classes
+﻿using HighSchoolPortal.Library.Enumerations;
+
+namespace HighSchoolPortal.Library.Classes
 {
     public class User
     {

@@ -70,12 +70,13 @@
     <Compile Include="Forms\ScheduleView.Designer.cs">
       <DependentUpon>ScheduleView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Library\Weekdays.cs" />
-    <Compile Include="Library\PeriodTimes.cs" />
+    <Compile Include="Library\Constants.cs" />
+    <Compile Include="Library\Enumerations\Weekdays.cs" />
+    <Compile Include="Library\Enumerations\PeriodTimes.cs" />
     <Compile Include="Library\Classes\SchoolClass.cs" />
     <Compile Include="Library\Classes\SchoolClassList.cs" />
     <Compile Include="Library\Classes\UserBody.cs" />
-    <Compile Include="Library\PowerLevel.cs" />
+    <Compile Include="Library\Enumerations\PowerLevel.cs" />
     <Compile Include="Library\Classes\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

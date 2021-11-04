@@ -1,4 +1,5 @@
 ﻿using HighSchoolPortal.Library.Classes;
+using HighSchoolPortal.Library.Enumerations;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -9,6 +10,7 @@ namespace HighSchoolPortal.Forms
     {
         private List<SchoolClass> _comboClasses;
         private User _loggedInUser;
+        private SchoolClassList _classList = new SchoolClassList();
         public ClassView(User user)
         {
             this.InitializeComponent();
@@ -18,16 +20,16 @@ namespace HighSchoolPortal.Forms
             this._comboClasses = new List<SchoolClass>();
 
             // Populate the combo box with the relevant classes for logged in user
-            foreach (SchoolClass schoolClass in SchoolClassList.GetInstance().ClassList)
+            foreach (SchoolClass schoolClass in _classList.ClassList)
             {
-                if (this._loggedInUser.PowerLevel == Library.PowerLevel.Student)
+                if (this._loggedInUser.PowerLevel == PowerLevel.Student)
                 {
                     if (schoolClass.Grade == this._loggedInUser.Grade)
                     {
                         this._comboClasses.Add(schoolClass);
                     }
                 }
-                else if (this._loggedInUser.PowerLevel == Library.PowerLevel.Teacher)
+                else if (this._loggedInUser.PowerLevel == PowerLevel.Teacher)
                 {
                     if (schoolClass.TeacherId == this._loggedInUser.TeacherId)
                     {

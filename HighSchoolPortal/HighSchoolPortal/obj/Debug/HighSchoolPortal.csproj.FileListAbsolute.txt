@@ -6,7 +6,6 @@ C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchool
 C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.Properties.Resources.resources
 C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.csproj.GenerateResource.cache
 C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.csproj.CoreCompileInputs.cache
-C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.csproj.CopyComplete
 C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.exe
 C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.pdb
 C:\Users\berickson\source\repos\High School Portal\High-School-Portal\HighSchoolPortal\HighSchoolPortal\obj\Debug\HighSchoolPortal.Forms.ClassView.resources

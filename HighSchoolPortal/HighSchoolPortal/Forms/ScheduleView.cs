@@ -1,5 +1,6 @@
 ﻿using HighSchoolPortal.Library;
 using HighSchoolPortal.Library.Classes;
+using HighSchoolPortal.Library.Enumerations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace HighSchoolPortal.Forms
     {
         private User _loggedInUser;
         private int _height;
+        private SchoolClassList _classList = new SchoolClassList();
         public ScheduleView(User user)
         {
             this.InitializeComponent();
@@ -26,9 +28,9 @@ namespace HighSchoolPortal.Forms
         private void ScheduleView_Load(object sender, EventArgs e)
         {
             List<SchoolClass> correctClasses = new List<SchoolClass>();
-            foreach (SchoolClass schoolClass in SchoolClassList.GetInstance().ClassList)
+            foreach (SchoolClass schoolClass in _classList.ClassList)
             {
-                if (this._loggedInUser.PowerLevel == Library.PowerLevel.Student)
+                if (this._loggedInUser.PowerLevel == PowerLevel.Student)
                 {
                     if (schoolClass.Grade == this._loggedInUser.Grade)
                     {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using HighSchoolPortal.Library.Enumerations;
 
 namespace HighSchoolPortal.Library.Classes
 {

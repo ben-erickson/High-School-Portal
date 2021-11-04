@@ -1,4 +1,4 @@
-﻿namespace HighSchoolPortal.Library
+﻿namespace HighSchoolPortal.Library.Enumerations
 {
     public enum PeriodTimes
     {

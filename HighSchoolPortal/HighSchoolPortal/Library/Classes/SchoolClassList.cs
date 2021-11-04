@@ -6,9 +6,9 @@ namespace HighSchoolPortal.Library.Classes
 {
     class SchoolClassList
     {
+        private const string s_CLASSFILE = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\HighSchoolPortal\\data\\classFile.json";
         public List<SchoolClass> ClassList { get; }
 
-        private const string s_CLASSFILE = "C:\\Users\\berickson\\source\\repos\\High School Portal\\High-School-Portal\\HighSchoolPortal\\HighSchoolPortal\\data\\classFile.json";
 
         /// <summary>
         /// Default constructor for SchoolClassList
@@ -29,7 +29,10 @@ namespace HighSchoolPortal.Library.Classes
         /// <param name="delimiter"></param>
         public SchoolClassList(string filepath, char delimiter = ',')
         {
-
+            foreach (string line in File.ReadAllLines(filepath))
+            {
+                this.ClassList.Add(new SchoolClass(filepath, delimiter));
+            }
         }
     } 
 
